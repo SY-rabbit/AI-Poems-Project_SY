@@ -34,8 +34,7 @@ main {
   padding: 20px;
   border-radius: 10px;
   max-width: 80%;
-  text-align: center;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .input {
@@ -56,12 +55,30 @@ main {
   font-style: normal;
   background-color: rgb(255, 255, 255);
   color: navy;
-  width: 15%;
+  width: 20%;
   padding: 10px;
-  margin-left: 5px;
+  margin-left: 15px;
   border: 1px solid aliceblue;
   font-size: 25px;
   text-align: center;
+}
+
+#instructions {
+  color: black;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+}
+
+.poem {
+  background-color: rgba(255, 255, 255, 0.456);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: left;
+  margin: 20px auto;
 }
 
 .poem-text {
