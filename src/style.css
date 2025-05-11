@@ -7,7 +7,16 @@ h1 {
   font-family: "Rouge Script", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 70px;
+  text-align: center;
+}
+
+#subheading {
+  color: #003153;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -52,4 +61,14 @@ main {
   margin-left: 5px;
   border: 1px solid aliceblue;
   font-size: 25px;
+  text-align: center;
+}
+
+.poem-text {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #003153;
+  font-size: 30px;
+  text-align: center;
 }
