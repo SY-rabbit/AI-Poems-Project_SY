@@ -92,7 +92,7 @@ main {
   line-height: 55px;
 }
 
-.waitingForConnection2 {
-    animation: blinker2 0.6s cubic-bezier(1, 0, 0, 1) infinite alternate;  
+.waitingForConnection3 {
+    animation: blinker3 1s ease-in-out infinite alternate;  
   }
-  @keyframes blinker2 { to { opacity: 0; } }
+  @keyframes blinker3 { to { opacity: 0; } }

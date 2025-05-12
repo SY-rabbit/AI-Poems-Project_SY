@@ -16,7 +16,7 @@ function newPoem(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
   let poemElement = document.querySelector(".poem");
   poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="waitingForConnection2">Your Poem about ${theme} is loading...</div>`;
+  poemElement.innerHTML = `<div class="waitingForConnection3">Your Poem about ${theme} is loading...</div>`;
   axios.get(apiUrl).then(displayPoem);
 }
 
