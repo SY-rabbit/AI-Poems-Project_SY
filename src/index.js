@@ -1,8 +1,8 @@
 function displayPoem(response) {
-  console.log(response.data.answer);
-  new Typewriter(".poem-text", {
+  new Typewriter(".poem", {
     strings: response.data.answer,
     autoStart: true,
+    delay: 50,
   });
 }
 
@@ -14,10 +14,9 @@ function newPoem(event) {
   let context =
     "please limit the poem to 4 lines and follow the inputed theme, apply rhyme and rhythm. separate each line with a <br>. wirte '<strong>~SheCodes AI</strong> at the bottom as writer of the poem";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
-
-  console.log(`prompt:${prompt}`);
-  console.log(`context:${context}`);
-  console.log(`apiUrl:${apiUrl}`);
+  let poemElement = document.querySelector(".poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="waitingForConnection2">Your Poem about ${theme} is loading...</div>`;
   axios.get(apiUrl).then(displayPoem);
 }
 

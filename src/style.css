@@ -71,7 +71,9 @@ main {
   font-size: 20px;
   text-align: left;
 }
-
+.hidden {
+  display: none;
+}
 .poem {
   background-color: rgba(255, 255, 255, 0.456);
   padding: 20px;
@@ -79,10 +81,7 @@ main {
   max-width: 80%;
   text-align: left;
   margin: 20px auto;
-  border-left: #003153 solid 5px;
-}
-
-.poem-text {
+  border-left: #003153 solid 5px;  
   font-family: "Fleur De Leah", cursive;
   font-weight: 400;
   font-style: normal;
@@ -92,3 +91,8 @@ main {
   padding-left: 10px;
   line-height: 55px;
 }
+
+.waitingForConnection2 {
+    animation: blinker2 0.6s cubic-bezier(1, 0, 0, 1) infinite alternate;  
+  }
+  @keyframes blinker2 { to { opacity: 0; } }
